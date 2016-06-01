@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Descriptor service="com.webratio.units.content.rtx.db.MultiChoiceIndexUnitService" name="Consulta Productos">
+  <MaxResults/>
+  <Query entity="ent2">
+    <Output id="att6" name="oid" index="0"/>
+    <Output id="att7" name="nombre" index="1"/>
+    <Output id="att8" name="descripcion" index="2"/>
+    <Output id="att9" name="precio" index="3"/>
+    <HQL>select a_productos.oid, a_productos.nombre, a_productos.descripcion, a_productos.precio from Productos a_productos</HQL>
+  </Query>
+  <wr:Validation xmlns:wr="http://www.webratio.com/2013/WebML/WRValidation">
+    <wr:ValidationLink elementId="mciu6" linkId="ln32" action="validate"/>
+    <wr:ValidationLink elementId="mciu6" linkId="ln33" action="validate"/>
+  </wr:Validation>
+</Descriptor>

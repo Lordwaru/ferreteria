@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Descriptor service="com.webratio.rtx.core.DefaultLinkService">
+  <Target>page52</Target>
+  <Secure>false</Secure>
+  <Source>mciu5</Source>
+  <SourcePage>page51</SourcePage>
+  <ReachableAlternativePages></ReachableAlternativePages>
+  <Navigates>true</Navigates>
+  <StartsTransaction>false</StartsTransaction>
+  <EndsTransaction>false</EndsTransaction>
+  <StartPageIdRequiredByTarget>false</StartPageIdRequiredByTarget>
+  <PreservedContextParams>
+    <Params/>
+  </PreservedContextParams>
+  <ContextPropagations>
+    <ContextPropagation targetParam="fld75_slot" sourceUnit="mciu5" sourceParam="data[].att3"/>
+    <ContextPropagation targetParam="fld70_slot" sourceUnit="mciu5" sourceParam="data[].password"/>
+    <ContextPropagation targetParam="fld71_slot" sourceUnit="mciu5" sourceParam="data[].email"/>
+    <ContextPropagation targetParam="fld72_slot" sourceUnit="mciu5" sourceParam="data[].att2"/>
+    <ContextPropagation targetParam="enu15.userOID" sourceUnit="mciu5" sourceParam="data[].userOID"/>
+    <ContextPropagation targetParam="fld74_slot" sourceUnit="mciu5" sourceParam="data[].att1"/>
+    <ContextPropagation targetParam="fld69_slot" sourceUnit="mciu5" sourceParam="data[].userName"/>
+    <ContextPropagation targetParam="fld73_slot" sourceUnit="mciu5" sourceParam="data[].att5"/>
+    <ContextPropagation targetParam="fld76_slot" sourceUnit="mciu5" sourceParam="data[].userOID"/>
+    <ContextPropagation targetParam="slot15" sourceUnit="mciu5" sourceParam="data[].att4"/>
+  </ContextPropagations>
+</Descriptor>

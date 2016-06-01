@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Descriptor service="com.webratio.units.operation.rtx.db.ModifyUnitService" name="ActualizarCliente">
+  <BulkUpdate>false</BulkUpdate>
+  <Entity>User</Entity>
+  <ModifiedAttributes>email|userName|att5|att4|att3|password|att2|att1</ModifiedAttributes>
+  <ModifiedRoles>User2Group|User2DefaultGroup</ModifiedRoles>
+  <FetchMode>ENTITY</FetchMode>
+  <Query entity="User">
+    <Input id="p0" param="kcond12.userOID" type="integer" implied="false" expandStyle="in"/>
+    <HQL>from User a_user
+      <Where defaultPolicy="fill" allImplied="false">(({[p0]a_user.oid in(?)}))</Where>
+    </HQL>
+  </Query>
+  <!--Operation Parameter Service-->
+  <WRParameterService service="com.webratio.rtx.core.DefaultOperationParameterService">
+    <ModelName>ActualizarCliente</ModelName>
+    <ParentContainer>sv2</ParentContainer>
+    <NavigationAncestors>sv2</NavigationAncestors>
+    <Secure>false</Secure>
+    <Localized>false</Localized>
+    <CheckPermission>true</CheckPermission>
+    <PermissionElement>sv2</PermissionElement>
+    <StartsTransaction>false</StartsTransaction>
+    <LinkIdRequired>true</LinkIdRequired>
+    <OperationParams>
+      <OperationParam unit="mfu6">mfu6.password</OperationParam>
+      <OperationParam unit="mfu6">mfu6.User2DefaultGroup.groupOID</OperationParam>
+      <OperationParam unit="mfu6">mfu6.att5</OperationParam>
+      <OperationParam unit="mfu6">kcond12.userOID</OperationParam>
+      <OperationParam unit="mfu6">mfu6.att2</OperationParam>
+      <OperationParam unit="mfu6">mfu6.att1</OperationParam>
+      <OperationParam unit="mfu6">mfu6.att4</OperationParam>
+      <OperationParam unit="mfu6">mfu6.User2Group.groupOID</OperationParam>
+      <OperationParam unit="mfu6">mfu6.att3</OperationParam>
+      <OperationParam unit="mfu6">mfu6.userName</OperationParam>
+      <OperationParam unit="mfu6">mfu6.entityBeans</OperationParam>
+      <OperationParam unit="mfu6">mfu6.email</OperationParam>
+      <Params>fld70_slot|sp|link|fld71_slot|enu15.userOID|fld76_slot|slot15|cmplink|fld74_slot|fld75_slot|fld72_slot|smc|fld69_slot|fld73_slot</Params>
+    </OperationParams>
+    <OutgoingLinks>
+      <Link resultCode="success">oln18</Link>
+    </OutgoingLinks>
+  </WRParameterService>
+</Descriptor>

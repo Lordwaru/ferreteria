@@ -1,0 +1,2 @@
+01 Jun 2016 00:30:37,063  WARN [localhost-startStop-2]  (com.webratio.struts.RTXInitPlugIn:61) - Stopping application module 'ferreteriaDP'
+01 Jun 2016 00:30:43,945  INFO [http-bio-8080-exec-3]  (com.webratio.struts.actions.AbstractWRAction:53) - [EF46FDB69BF08CDBD4A8807D47DCE6D8][page1]Page action execution [id=page1] done in 316 ms

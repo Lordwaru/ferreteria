@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Descriptor service="com.webratio.rtx.core.DefaultLinkService">
+  <Target>mfu6</Target>
+  <Secure>false</Secure>
+  <Source>enu15</Source>
+  <SourcePage>page52</SourcePage>
+  <ReachableAlternativePages></ReachableAlternativePages>
+  <Navigates>true</Navigates>
+  <StartsTransaction>false</StartsTransaction>
+  <EndsTransaction>false</EndsTransaction>
+  <StartPageIdRequiredByTarget>true</StartPageIdRequiredByTarget>
+  <PreservedContextParams>
+    <Params/>
+  </PreservedContextParams>
+  <ContextPropagations>
+    <ContextPropagation targetParam="mfu6.att3" sourceUnit="enu15" sourceParam="fld75"/>
+    <ContextPropagation targetParam="mfu6.att2" sourceUnit="enu15" sourceParam="fld72"/>
+    <ContextPropagation targetParam="mfu6.email" sourceUnit="enu15" sourceParam="fld71"/>
+    <ContextPropagation targetParam="kcond12.userOID" sourceUnit="enu15" sourceParam="key.userOID"/>
+    <ContextPropagation targetParam="mfu6.att1" sourceUnit="enu15" sourceParam="fld74"/>
+    <ContextPropagation targetParam="mfu6.password" sourceUnit="enu15" sourceParam="fld70"/>
+    <ContextPropagation targetParam="mfu6.att4" sourceUnit="enu15" sourceParam="slot15"/>
+    <ContextPropagation targetParam="mfu6.att5" sourceUnit="enu15" sourceParam="fld73"/>
+    <ContextPropagation targetParam="mfu6.entityBeans" sourceUnit="enu15" sourceParam="entityBean"/>
+    <ContextPropagation targetParam="mfu6.userName" sourceUnit="enu15" sourceParam="fld69"/>
+    <ContextPropagation targetParam="mfu6.User2DefaultGroup.groupOID" sourceUnit="enu15" sourceParam="slot16"/>
+    <ContextPropagation targetParam="mfu6.User2Group.groupOID" sourceUnit="enu15" sourceParam="slot16"/>
+  </ContextPropagations>
+</Descriptor>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Descriptor service="com.webratio.units.content.rtx.EntityBasedEntryUnitService" name="Alta Cliente">
+  <Entity>User</Entity>
+  <Query entity="User">
+    <Input id="p0" param="enu15.userOID" type="integer" implied="false" expandStyle="in"/>
+    <HQL>from User a_user
+      <Where defaultPolicy="" allImplied="false">(({[p0]a_user.oid in(?)}))</Where>
+    </HQL>
+  </Query>
+  <FormFields>
+    <Field id="fld69" name="Nombre de usuario" type="string" localized="false" attributeId="userName">
+      <Slot id="fld69_slot" label="true" output="true"/>
+    </Field>
+    <Field id="fld70" name="Contrase&#241;a" type="password" localized="false" attributeId="password">
+      <Slot id="fld70_slot" label="true" output="true"/>
+    </Field>
+    <Field id="fld71" name="Correo electr&#243;nico" type="string" localized="false" attributeId="email">
+      <Slot id="fld71_slot" label="true" output="true"/>
+    </Field>
+    <Field id="fld72" name="Direcci&#243;n" type="string" localized="false">
+      <Slot id="fld72_slot" label="true" output="true"/>
+    </Field>
+    <Field id="fld73" name="T&#233;lefono" type="string" localized="false">
+      <Slot id="fld73_slot" label="true" output="true"/>
+    </Field>
+    <Field id="fld74" name="Nombre" type="string" localized="false">
+      <Slot id="fld74_slot" label="true" output="true"/>
+    </Field>
+    <Field id="fld75" name="Apellidos" type="string" localized="false">
+      <Slot id="fld75_slot" label="true" output="true"/>
+    </Field>
+    <Field id="fld76" name="id" type="integer" localized="false">
+      <Slot id="fld76_slot" label="true" output="true"/>
+    </Field>
+    <SelectionField id="sfld10" name="Sexo" type="string" localized="false" value="" splitOutput="true" attributeId="att4">
+      <Slot id="slot15" label="true" output="true" value="Masculino|Femenino"/>
+    </SelectionField>
+    <SelectionField id="sfld11" name="Tipo" type="integer" localized="true" value="" splitOutput="true">
+      <Slot id="slot16" label="true" output="true" value="1|2"/>
+    </SelectionField>
+  </FormFields>
+  <wr:Validation xmlns:wr="http://www.webratio.com/2013/WebML/WRValidation">
+    <wr:ValidationLink elementId="enu15" linkId="ln31" action="validate"/>
+    <MandatoryValidationRule service="com.webratio.units.validation.MandatoryValidationRuleService" elementId="fld69" id="mnd76" name="Mandatory4" customErrorMessage="true">
+      <CompanionField/>
+      <Predicate/>
+      <IgnoreCase/>
+      <Value/>
+    </MandatoryValidationRule>
+    <MandatoryValidationRule service="com.webratio.units.validation.MandatoryValidationRuleService" elementId="fld69" id="mnd77" name="MandatoryRepeat" customErrorMessage="true">
+      <CompanionField>fld69</CompanionField>
+      <Predicate/>
+      <IgnoreCase/>
+      <Value/>
+    </MandatoryValidationRule>
+    <MandatoryValidationRule service="com.webratio.units.validation.MandatoryValidationRuleService" elementId="fld70" id="mnd78" name="Mandatory4" customErrorMessage="true">
+      <CompanionField/>
+      <Predicate/>
+      <IgnoreCase/>
+      <Value/>
+    </MandatoryValidationRule>
+    <MandatoryValidationRule service="com.webratio.units.validation.MandatoryValidationRuleService" elementId="fld71" id="mnd79" name="Mandatory4" customErrorMessage="true">
+      <CompanionField/>
+      <Predicate/>
+      <IgnoreCase/>
+      <Value/>
+    </MandatoryValidationRule>
+    <EMailValidationRule service="com.webratio.units.validation.EMailValidationRuleService" elementId="fld71" id="email7" name="EMail1" customErrorMessage="true"/>
+    <MandatoryValidationRule service="com.webratio.units.validation.MandatoryValidationRuleService" elementId="fld71" id="mnd80" name="Mandatoryrepeat" customErrorMessage="true">
+      <CompanionField>fld71</CompanionField>
+      <Predicate/>
+      <IgnoreCase/>
+      <Value/>
+    </MandatoryValidationRule>
+    <MandatoryValidationRule service="com.webratio.units.validation.MandatoryValidationRuleService" elementId="fld72" id="mnd81" name="Mandatory4" customErrorMessage="true">
+      <CompanionField/>
+      <Predicate/>
+      <IgnoreCase/>
+      <Value/>
+    </MandatoryValidationRule>
+    <MandatoryValidationRule service="com.webratio.units.validation.MandatoryValidationRuleService" elementId="fld73" id="mnd82" name="Mandatory4" customErrorMessage="true">
+      <CompanionField/>
+      <Predicate/>
+      <IgnoreCase/>
+      <Value/>
+    </MandatoryValidationRule>
+    <MandatoryValidationRule service="com.webratio.units.validation.MandatoryValidationRuleService" elementId="fld74" id="mnd83" name="Mandatory4" customErrorMessage="true">
+      <CompanionField/>
+      <Predicate/>
+      <IgnoreCase/>
+      <Value/>
+    </MandatoryValidationRule>
+    <MandatoryValidationRule service="com.webratio.units.validation.MandatoryValidationRuleService" elementId="fld75" id="mnd84" name="Mandatory4" customErrorMessage="true">
+      <CompanionField/>
+      <Predicate/>
+      <IgnoreCase/>
+      <Value/>
+    </MandatoryValidationRule>
+  </wr:Validation>
+</Descriptor>

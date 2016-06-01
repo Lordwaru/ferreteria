@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Descriptor service="com.webratio.units.operation.rtx.db.DeleteUnitService" name="Eliminar Producto">
+  <Entity>ent2</Entity>
+  <CascadeDeleteRoles/>
+  <FetchMode keyCondition="kcond10">HQL</FetchMode>
+  <!--Operation Parameter Service-->
+  <WRParameterService service="com.webratio.rtx.core.DefaultOperationParameterService">
+    <ModelName>Eliminar Producto</ModelName>
+    <ParentContainer>sv2</ParentContainer>
+    <NavigationAncestors>sv2</NavigationAncestors>
+    <Secure>false</Secure>
+    <Localized>false</Localized>
+    <CheckPermission>true</CheckPermission>
+    <PermissionElement>sv2</PermissionElement>
+    <StartsTransaction>false</StartsTransaction>
+    <LinkIdRequired>true</LinkIdRequired>
+    <OperationParams>
+      <OperationParam unit="dlu6">kcond10.att6</OperationParam>
+      <OperationParam unit="dlu6">par222</OperationParam>
+      <OperationParam unit="dlu6">par221</OperationParam>
+      <OperationParam unit="dlu6">par223</OperationParam>
+      <Params>fld82_slot|fld80_slot|sp|fld83_slot|cmplink|link|fld81_slot|smc</Params>
+    </OperationParams>
+    <OutgoingLinks>
+      <Link resultCode="success">oln14</Link>
+      <Link resultCode="error">kln13</Link>
+    </OutgoingLinks>
+    <IsLinkHistoryRecorded>true</IsLinkHistoryRecorded>
+  </WRParameterService>
+</Descriptor>

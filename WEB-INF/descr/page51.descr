@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Descriptor service="com.webratio.rtx.core.DefaultPageService" name="Consultar Clientes">
+  <ParentContainer>area19</ParentContainer>
+  <Secure>false</Secure>
+  <Localized>false</Localized>
+  <CheckPermission>true</CheckPermission>
+  <PermissionElement>sv2</PermissionElement>
+  <Alternatives/>
+  <ProtectedSubPages/>
+  <Navigations knownEffects="#pr#">
+    <Navigation name="0" nonContextual="true" interPage="always" links="page51"/>
+    <Navigation name="1" nonContextual="true" interPage="always" links="page51.link"/>
+    <Navigation name="2" links="page51.auto-link"/>
+    <Navigation name="3" links="page51.auto-link" selectiveRefresh="true"/>
+    <Navigation name="4" links="ln29|kln12" effects="#pr#"/>
+  </Navigations>
+  <ContextInitServices/>
+  <ContextInits></ContextInits>
+  <UselessPreserves>
+    <UselessPreserve navs="3|2|4" futile=""/>
+  </UselessPreserves>
+  <LinkSequence/>
+  <UnitComputations>
+    <UnitComputation unit="mciu5" formBased="true">
+      <NavigationCondition selectiveRefresh="true" effects="#pr#"/>
+      <RefreshFormAll navs="1|0|4"/>
+    </UnitComputation>
+  </UnitComputations>
+  <ManualLinks>
+    <ManualLink>ln29</ManualLink>
+    <ManualLink>ln30</ManualLink>
+  </ManualLinks>
+  <Variables></Variables>
+  <Conditions></Conditions>
+  <Layouts>
+    <Layout id="page51_grid_0">
+      <Layout id="page51_cell_0">
+        <Layout id="mciu5_0" unitId="mciu5"></Layout>
+      </Layout>
+    </Layout>
+  </Layouts>
+  <AutoLinkInfo>
+    <PreservedContextParams>
+      <Params/>
+    </PreservedContextParams>
+    <PreservedContextParams selectiveRefresh="true">
+      <Params/>
+    </PreservedContextParams>
+  </AutoLinkInfo>
+  <!--Page Parameter Service-->
+  <WRParameterService service="com.webratio.rtx.core.DefaultPageParameterService">
+    <ModelName>Consultar Clientes</ModelName>
+    <NavigationAncestors>sv2|area19</NavigationAncestors>
+    <LinkIdRequired>true</LinkIdRequired>
+    <PageParams>
+      <PageParam>kcond9.userOID</PageParam>
+      <PageParam preservedByForm="true">fld76_slot</PageParam>
+      <PageParam preservedByForm="true">enu15.userOID</PageParam>
+      <PageParam preservedByForm="true">fld71_slot</PageParam>
+      <PageParam preservedByForm="true">fld72_slot</PageParam>
+      <PageParam preservedByForm="true">fld75_slot</PageParam>
+      <PageParam preservedByForm="true">fld69_slot</PageParam>
+      <PageParam preservedByForm="true">fld73_slot</PageParam>
+      <PageParam preservedByForm="true">fld70_slot</PageParam>
+      <PageParam preservedByForm="true" formPreserveGroup="sfld10|sfld10_label">slot15</PageParam>
+      <PageParam preservedByForm="true">fld74_slot</PageParam>
+      <PageParam>link</PageParam>
+      <PageParam>nav</PageParam>
+      <PageParam>so</PageParam>
+      <PageParam>ajax</PageParam>
+      <PageParam>ajaxRefresh</PageParam>
+    </PageParams>
+  </WRParameterService>
+</Descriptor>

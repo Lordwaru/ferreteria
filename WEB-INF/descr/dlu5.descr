@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Descriptor service="com.webratio.units.operation.rtx.db.DeleteUnitService" name="Eliminar Cliente">
+  <Entity>User</Entity>
+  <CascadeDeleteRoles/>
+  <FetchMode keyCondition="kcond9">HQL</FetchMode>
+  <!--Operation Parameter Service-->
+  <WRParameterService service="com.webratio.rtx.core.DefaultOperationParameterService">
+    <ModelName>Eliminar Cliente</ModelName>
+    <ParentContainer>sv2</ParentContainer>
+    <NavigationAncestors>sv2</NavigationAncestors>
+    <Secure>false</Secure>
+    <Localized>false</Localized>
+    <CheckPermission>true</CheckPermission>
+    <PermissionElement>sv2</PermissionElement>
+    <StartsTransaction>false</StartsTransaction>
+    <LinkIdRequired>true</LinkIdRequired>
+    <OperationParams>
+      <OperationParam unit="dlu5">kcond9.userOID</OperationParam>
+      <Params>fld70_slot|sp|link|fld71_slot|enu15.userOID|fld76_slot|slot15|cmplink|fld74_slot|fld75_slot|fld72_slot|smc|fld69_slot|fld73_slot</Params>
+    </OperationParams>
+    <OutgoingLinks>
+      <Link resultCode="success">oln13</Link>
+      <Link resultCode="error">kln12</Link>
+    </OutgoingLinks>
+    <IsLinkHistoryRecorded>true</IsLinkHistoryRecorded>
+  </WRParameterService>
+</Descriptor>

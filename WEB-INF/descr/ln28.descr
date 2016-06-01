@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Descriptor service="com.webratio.rtx.core.DefaultLinkService">
+  <Target>cru6</Target>
+  <Secure>false</Secure>
+  <Source>enu14</Source>
+  <SourcePage>page50</SourcePage>
+  <ReachableAlternativePages></ReachableAlternativePages>
+  <Navigates>true</Navigates>
+  <StartsTransaction>false</StartsTransaction>
+  <EndsTransaction>false</EndsTransaction>
+  <StartPageIdRequiredByTarget>true</StartPageIdRequiredByTarget>
+  <PreservedContextParams>
+    <Params>enu14.userOID</Params>
+  </PreservedContextParams>
+  <ContextPropagations>
+    <ContextPropagation targetParam="cru6.email" sourceUnit="enu14" sourceParam="fld64"/>
+    <ContextPropagation targetParam="cru6.userOID" sourceUnit="enu14" sourceParam="key.userOID"/>
+    <ContextPropagation targetParam="cru6.password" sourceUnit="enu14" sourceParam="fld63"/>
+    <ContextPropagation targetParam="cru6.entityBeans" sourceUnit="enu14" sourceParam="entityBean"/>
+    <ContextPropagation targetParam="cru6.userName" sourceUnit="enu14" sourceParam="fld62"/>
+    <ContextPropagation targetParam="par191" sourceUnit="enu14" sourceParam="fld68"/>
+    <ContextPropagation targetParam="par192" sourceUnit="enu14" sourceParam="fld65"/>
+    <ContextPropagation targetParam="par193" sourceUnit="enu14" sourceParam="fld67"/>
+    <ContextPropagation targetParam="par195" sourceUnit="enu14" sourceParam="fld66"/>
+    <ContextPropagation targetParam="cru6.att3" sourceUnit="enu14" sourceParam="fld68"/>
+    <ContextPropagation targetParam="cru6.att2" sourceUnit="enu14" sourceParam="fld65"/>
+    <ContextPropagation targetParam="cru6.att1" sourceUnit="enu14" sourceParam="fld67"/>
+    <ContextPropagation targetParam="cru6.att5" sourceUnit="enu14" sourceParam="fld66"/>
+    <ContextPropagation targetParam="cru6.User2Group.groupOID" sourceUnit="enu14" sourceParam="slot14"/>
+    <ContextPropagation targetParam="cru6.User2DefaultGroup.groupOID" sourceUnit="enu14" sourceParam="slot14"/>
+  </ContextPropagations>
+</Descriptor>

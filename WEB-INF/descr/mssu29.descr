@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Descriptor service="com.webratio.units.content.rtx.MultiMessageUnitService" name="Bienvenidos">
+  <Message xml:space="preserve">Bienvenido al Sistema de Ferreteria Don Pancho</Message>
+</Descriptor>

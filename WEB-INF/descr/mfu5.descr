@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Descriptor service="com.webratio.units.operation.rtx.db.ModifyUnitService" name="Update1">
+  <BulkUpdate>false</BulkUpdate>
+  <Entity>ent2</Entity>
+  <ModifiedAttributes>att9|att8|att7</ModifiedAttributes>
+  <ModifiedRoles/>
+  <FetchMode keyCondition="kcond11">HQL</FetchMode>
+  <!--Operation Parameter Service-->
+  <WRParameterService service="com.webratio.rtx.core.DefaultOperationParameterService">
+    <ModelName>Update1</ModelName>
+    <ParentContainer>sv2</ParentContainer>
+    <NavigationAncestors>sv2</NavigationAncestors>
+    <Secure>false</Secure>
+    <Localized>false</Localized>
+    <CheckPermission>true</CheckPermission>
+    <PermissionElement>sv2</PermissionElement>
+    <StartsTransaction>false</StartsTransaction>
+    <LinkIdRequired>true</LinkIdRequired>
+    <OperationParams>
+      <OperationParam unit="mfu5">kcond11.att6</OperationParam>
+      <OperationParam unit="mfu5">mfu5.att8</OperationParam>
+      <OperationParam unit="mfu5">mfu5.att9</OperationParam>
+      <OperationParam unit="mfu5">mfu5.att7</OperationParam>
+      <Params>fld82_slot|fld80_slot|sp|fld83_slot|cmplink|link|fld81_slot|smc</Params>
+    </OperationParams>
+    <OutgoingLinks>
+      <Link resultCode="success">oln17</Link>
+    </OutgoingLinks>
+  </WRParameterService>
+</Descriptor>

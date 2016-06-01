@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Descriptor service="com.webratio.units.content.rtx.EntryUnitService" name="Alta Producto">
+  <FormFields>
+    <Field id="fld77" name="Nombre" type="string" localized="false"></Field>
+    <Field id="fld78" name="Descripci&#243;n" type="string" localized="false"></Field>
+    <Field id="fld79" name="Precio" type="decimal" localized="true"></Field>
+  </FormFields>
+  <wr:Validation xmlns:wr="http://www.webratio.com/2013/WebML/WRValidation">
+    <wr:ValidationLink elementId="enu16" linkId="ln34" action="validate"/>
+    <MandatoryValidationRule service="com.webratio.units.validation.MandatoryValidationRuleService" elementId="fld77" id="mnd85" name="Mandatory2" customErrorMessage="true">
+      <CompanionField/>
+      <Predicate/>
+      <IgnoreCase/>
+      <Value/>
+    </MandatoryValidationRule>
+    <MandatoryValidationRule service="com.webratio.units.validation.MandatoryValidationRuleService" elementId="fld78" id="mnd86" name="Mandatory1" customErrorMessage="true">
+      <CompanionField/>
+      <Predicate/>
+      <IgnoreCase/>
+      <Value/>
+    </MandatoryValidationRule>
+    <MandatoryValidationRule service="com.webratio.units.validation.MandatoryValidationRuleService" elementId="fld79" id="mnd87" name="Mandatory3" customErrorMessage="true">
+      <CompanionField/>
+      <Predicate/>
+      <IgnoreCase/>
+      <Value/>
+    </MandatoryValidationRule>
+    <TypeValidationRule service="com.webratio.units.validation.TypeValidationRuleService" elementId="fld79" id="tvr6" name="Type Validation1" customErrorMessage="true">
+      <Type>decimal</Type>
+    </TypeValidationRule>
+  </wr:Validation>
+</Descriptor>
